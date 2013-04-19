@@ -9,7 +9,7 @@
 <grid distance="2" unitdist="mil" unit="mil" style="dots" multiple="5" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -17,9 +17,9 @@
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -32,20 +32,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -131,10 +131,11 @@
 <wire x1="9.271" y1="28.956" x2="20.955" y2="28.956" width="0.2032" layer="51"/>
 <wire x1="22.733" y1="28.956" x2="26.924" y2="28.956" width="0.2032" layer="51"/>
 <rectangle x1="21.082" y1="29.083" x2="23.876" y2="30.734" layer="42"/>
-<text x="31.369" y="17.4752" size="0.889" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">CYRF6936-BoB</text>
-<text x="33.0962" y="17.526" size="0.762" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">J Moreland Engineering LLC</text>
-<dimension x1="8.89" y1="38.1" x2="8.89" y2="4.2164" x3="7.0104" y3="21.1582" textsize="0.6096" textratio="15" layer="47"/>
-<dimension x1="27.305" y1="38.1" x2="8.89" y2="38.1" x3="18.0975" y3="40.0304" textsize="0.6096" textratio="15" layer="47"/>
+<text x="25.9334" y="16.4592" size="0.889" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">CYRF6936-BoB v0.1</text>
+<text x="13.1318" y="16.51" size="0.762" layer="52" font="vector" ratio="15" rot="R90" align="bottom-center">J Moreland Engineering LLC
+18 Apr 2013</text>
+<dimension x1="27.305" y1="38.1" x2="8.89" y2="38.1" x3="18.0975" y3="40.0304" textsize="0.8128" textratio="15" layer="47"/>
+<dimension x1="27.305" y1="7.366" x2="27.305" y2="38.1" x3="36.068" y3="22.733" textsize="0.762" textratio="15" layer="47"/>
 </plain>
 <libraries>
 <library name="JCM">
@@ -486,46 +487,46 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VOLT" value="6.3" x="17.4498" y="13.6652" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C15" library="SparkFun-Passives" package="0402-CAP" value="0.47uF" x="14.4018" y="12.8016" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.9004" y="12.6365" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="15.748" y="12.5857" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="15.4813" y="13.9446" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="GRM155R60J474KE19D" x="14.4018" y="12.8016" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLT" value="6.3" x="14.4018" y="12.8016" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L1" library="SparkFun-Passives" package="0603" value="" x="24.2062" y="25.1714" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.0952" y="24.4094" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="24.5364" y="24.3586" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="25.2222" y="26.3144" size="0.4064" layer="27" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="ELJ-RE22NGFA" x="24.2062" y="25.1714" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L2" library="SparkFun-Passives" package="C0402" value="" x="19.558" y="26.4414" smashed="yes">
-<attribute name="NAME" x="17.018" y="26.2763" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="17.5768" y="26.2763" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="18.4785" y="25.2984" size="0.4064" layer="27"/>
 <attribute name="PARTNO" value="ELJ-RF1N8DFB" x="19.558" y="26.4414" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C1" library="SparkFun-Passives" package="0402-CAP" value="15pF" x="21.9202" y="25.8064" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.6568" y="26.6319" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="22.8092" y="26.3779" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="23.0632" y="24.7269" size="0.4064" layer="27" rot="R90"/>
 <attribute name="PARTNO" value="C0402C150J5GACTU" x="21.9202" y="25.8064" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLT" value="50" x="21.9202" y="25.8064" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C3" library="SparkFun-Passives" package="0402-CAP" value="2.0pF" x="18.2626" y="25.146" smashed="yes" rot="R180">
-<attribute name="NAME" x="16.9926" y="24.1935" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="17.9578" y="24.0919" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.3421" y="26.289" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="C0402C209C5GACTU" x="18.2626" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLT" value="50" x="18.2626" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C4" library="SparkFun-Passives" package="0402-CAP" value="1.5pF" x="21.2598" y="28.1178" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.4056" y="28.3337" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="19.8628" y="28.2829" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="22.3393" y="29.2608" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="C0402C159B5GACTU" x="21.2598" y="28.1178" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLT" value="50" x="21.2598" y="28.1178" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Y1" library="SparkFun-FreqCtrl" package="CRYSTAL-SMD-5X3" value="" x="18.8976" y="9.4488" smashed="yes">
-<attribute name="NAME" x="10.1092" y="8.7884" size="1.27" layer="25" font="vector" ratio="10"/>
+<attribute name="NAME" x="21.9964" y="9.0932" size="0.9144" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="13.8176" y="5.2578" size="1.27" layer="27" ratio="10"/>
 <attribute name="PARTNO" value="7B-12.000MEEQ-T" x="18.8976" y="9.4488" size="0.6096" layer="27" font="vector" ratio="15" align="bottom-center" display="off"/>
 </element>
 <element name="C6" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="15.0114" y="25.146" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.7414" y="24.1935" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="14.6558" y="24.0919" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="16.0909" y="26.289" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="15.0114" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -535,7 +536,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="PARTNO" value="0402YD473KAT2A" x="22.5298" y="18.8214" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C8" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="14.4018" y="14.3002" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.9258" y="14.1351" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="15.7226" y="14.0843" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="15.4813" y="15.4432" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="14.4018" y="14.3002" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -555,7 +556,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="PARTNO" value="0402YD473KAT2A" x="22.5298" y="21.844" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C14" library="SparkFun-Passives" package="0805" value="2.2uF" x="13.9192" y="10.5664" smashed="yes">
-<attribute name="NAME" x="15.4178" y="10.1727" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="13.2334" y="9.2583" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="12.9032" y="9.1694" size="0.4064" layer="27"/>
 <attribute name="PARTNO" value="GRM21BR71A225KA01L" x="13.9192" y="10.5664" size="1.778" layer="27" display="off"/>
 </element>
@@ -626,10 +627,10 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="16.9538" y1="22.787" x2="16.9538" y2="19.812" width="0.3048" layer="1"/>
 <wire x1="16.9538" y1="19.812" x2="17.7038" y2="19.812" width="0.4064" layer="1"/>
 <polygon width="0.1524" layer="16">
-<vertex x="8.636" y="0.254"/>
-<vertex x="27.94" y="0.254"/>
-<vertex x="27.94" y="30.6832"/>
-<vertex x="8.636" y="30.6832"/>
+<vertex x="8.89" y="7.366"/>
+<vertex x="27.305" y="7.366"/>
+<vertex x="27.305" y="30.6832"/>
+<vertex x="8.89" y="30.6832"/>
 </polygon>
 <via x="13.7414" y="15.0368" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <wire x1="15.4538" y1="16.837" x2="15.9512" y2="16.837" width="0.254" layer="1"/>
@@ -721,9 +722,9 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="18.4538" y1="16.837" x2="18.4538" y2="17.9204" width="0.3048" layer="1"/>
 <wire x1="18.4538" y1="17.9204" x2="18.5928" y2="18.0594" width="0.3048" layer="1"/>
 <polygon width="0.1524" layer="1" rank="2">
-<vertex x="8.89" y="0.2032"/>
-<vertex x="28.194" y="0.2032"/>
-<vertex x="28.194" y="28.956"/>
+<vertex x="8.89" y="7.366"/>
+<vertex x="27.305" y="7.366"/>
+<vertex x="27.305" y="28.956"/>
 <vertex x="8.89" y="28.956"/>
 </polygon>
 <via x="10.414" y="10.8204" extent="1-16" drill="0.3048" diameter="0.6096"/>
@@ -789,9 +790,9 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="14.986" y1="35.814" x2="10.795" y2="35.814" width="0.508" layer="1"/>
 <wire x1="21.844" y1="29.972" x2="14.6558" y2="29.972" width="0.508" layer="1"/>
 <via x="14.6558" y="29.972" extent="1-16" drill="0.381" diameter="0.508"/>
+<via x="23.622" y="13.462" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <wire x1="21.844" y1="28.575" x2="21.9098" y2="28.1178" width="0" layer="19" extent="1-1"/>
 <wire x1="19.3294" y1="18.9992" x2="19.3294" y2="19.0754" width="0" layer="19" extent="1-1"/>
-<via x="23.622" y="13.462" extent="1-16" drill="0.3048" diameter="0.6096"/>
 </signal>
 <signal name="VDD">
 <contactref element="CYRF6936" pad="35"/>
@@ -971,4 +972,10 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
