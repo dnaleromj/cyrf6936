@@ -1,0 +1,6 @@
+* FR4 Material
+* All layers .5 oz. copper
+* All holes plated through
+* Drills shown as finished sizes
+* Board thickness 0.8mm
+* Use p-tinyRF.panel_outline.ger as board outline.
