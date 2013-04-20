@@ -9,7 +9,7 @@
 <grid distance="2" unitdist="mil" unit="mil" style="dots" multiple="5" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -39,10 +39,10 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -132,10 +132,12 @@
 <wire x1="22.733" y1="28.956" x2="26.924" y2="28.956" width="0.2032" layer="51"/>
 <rectangle x1="21.082" y1="29.083" x2="23.876" y2="30.734" layer="42"/>
 <text x="25.9334" y="16.4592" size="0.889" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">CYRF6936-BoB v0.1</text>
-<text x="13.1318" y="16.51" size="0.762" layer="52" font="vector" ratio="15" rot="R90" align="bottom-center">J Moreland Engineering LLC
+<text x="12.827" y="16.8656" size="0.762" layer="52" font="vector" ratio="15" rot="MR270" align="bottom-center">J Moreland Engineering LLC
 18 Apr 2013</text>
 <dimension x1="27.305" y1="38.1" x2="8.89" y2="38.1" x3="18.0975" y3="40.0304" textsize="0.8128" textratio="15" layer="47"/>
 <dimension x1="27.305" y1="7.366" x2="27.305" y2="38.1" x3="36.068" y3="22.733" textsize="0.762" textratio="15" layer="47"/>
+<rectangle x1="8.89" y1="30.6832" x2="27.2796" y2="38.1" layer="30"/>
+<rectangle x1="8.89" y1="30.6832" x2="27.2796" y2="38.1" layer="29"/>
 </plain>
 <libraries>
 <library name="JCM">
@@ -475,13 +477,13 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 </autorouter>
 <elements>
 <element name="CYRF6936" library="JCM" package="QFN40" value="CYRF6936" x="17.7038" y="19.812" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.939" y="23.8252" size="0.6096" layer="51" font="vector" ratio="10" rot="R180"/>
+<attribute name="NAME" x="20.0406" y="24.3332" size="0.6096" layer="51" font="vector" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="13.8938" y="16.002" size="1.27" layer="27" ratio="10" rot="R90"/>
 <attribute name="NAME" x="17.7038" y="18.542" size="0.4064" layer="33" ratio="10" rot="R90"/>
 <attribute name="PARTNO" value="CYRF6936B-40LTXC" x="17.7038" y="19.812" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C5" library="SparkFun-Passives" package="0402-CAP" value="0.47uF" x="17.4498" y="13.6652" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.0942" y="11.2395" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="17.8054" y="11.9507" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="16.3068" y="14.7447" size="0.4064" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="GRM155R60J474KE19D" x="17.4498" y="13.6652" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLT" value="6.3" x="17.4498" y="13.6652" size="1.778" layer="27" rot="R270" display="off"/>
@@ -493,23 +495,23 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VOLT" value="6.3" x="14.4018" y="12.8016" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L1" library="SparkFun-Passives" package="0603" value="" x="24.2062" y="25.1714" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.5364" y="24.3586" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="23.9268" y="24.0538" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="25.2222" y="26.3144" size="0.4064" layer="27" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="ELJ-RE22NGFA" x="24.2062" y="25.1714" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L2" library="SparkFun-Passives" package="C0402" value="" x="19.558" y="26.4414" smashed="yes">
-<attribute name="NAME" x="17.5768" y="26.2763" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="17.7292" y="26.2763" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="18.4785" y="25.2984" size="0.4064" layer="27"/>
 <attribute name="PARTNO" value="ELJ-RF1N8DFB" x="19.558" y="26.4414" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C1" library="SparkFun-Passives" package="0402-CAP" value="15pF" x="21.9202" y="25.8064" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.8092" y="26.3779" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="21.6408" y="24.0411" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="23.0632" y="24.7269" size="0.4064" layer="27" rot="R90"/>
 <attribute name="PARTNO" value="C0402C150J5GACTU" x="21.9202" y="25.8064" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VOLT" value="50" x="21.9202" y="25.8064" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C3" library="SparkFun-Passives" package="0402-CAP" value="2.0pF" x="18.2626" y="25.146" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.9578" y="24.0919" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="16.383" y="24.9555" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="19.3421" y="26.289" size="0.4064" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="C0402C209C5GACTU" x="18.2626" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLT" value="50" x="18.2626" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
@@ -521,7 +523,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VOLT" value="50" x="21.2598" y="28.1178" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="Y1" library="SparkFun-FreqCtrl" package="CRYSTAL-SMD-5X3" value="" x="18.8976" y="9.4488" smashed="yes">
-<attribute name="NAME" x="21.9964" y="9.0932" size="0.9144" layer="25" font="vector" ratio="10"/>
+<attribute name="NAME" x="18.2372" y="9.0932" size="0.9144" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="13.8176" y="5.2578" size="1.27" layer="27" ratio="10"/>
 <attribute name="PARTNO" value="7B-12.000MEEQ-T" x="18.8976" y="9.4488" size="0.6096" layer="27" font="vector" ratio="15" align="bottom-center" display="off"/>
 </element>
@@ -531,7 +533,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="PARTNO" value="0402YD473KAT2A" x="15.0114" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C7" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="22.5298" y="18.8214" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.2504" y="16.2687" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="22.2504" y="20.1295" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="23.6728" y="17.7419" size="0.4064" layer="27" rot="R90"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="22.5298" y="18.8214" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -541,24 +543,24 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="PARTNO" value="0402YD473KAT2A" x="14.4018" y="14.3002" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C9" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="19.4564" y="13.6652" smashed="yes" rot="R270">
-<attribute name="NAME" x="19.177" y="11.2395" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="19.8882" y="11.9507" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="18.3134" y="14.7447" size="0.4064" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="19.4564" y="13.6652" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C10" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="23.7236" y="18.8214" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.2156" y="20.6121" size="0.4064" layer="25" font="vector"/>
+<attribute name="NAME" x="23.3172" y="20.1549" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="22.5806" y="19.9009" size="0.4064" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="23.7236" y="18.8214" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C11" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="22.5298" y="21.844" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.8313" y="20.955" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="NAME" x="23.2918" y="22.3139" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="23.6728" y="20.7645" size="0.4064" layer="27" rot="R90"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="22.5298" y="21.844" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C14" library="SparkFun-Passives" package="0805" value="2.2uF" x="13.9192" y="10.5664" smashed="yes">
-<attribute name="NAME" x="13.2334" y="9.2583" size="0.4064" layer="25" font="vector"/>
-<attribute name="VALUE" x="12.9032" y="9.1694" size="0.4064" layer="27"/>
-<attribute name="PARTNO" value="GRM21BR71A225KA01L" x="13.9192" y="10.5664" size="1.778" layer="27" display="off"/>
+<element name="C14" library="SparkFun-Passives" package="0805" value="2.2uF" x="14.3256" y="10.2616" smashed="yes">
+<attribute name="NAME" x="13.6398" y="8.9535" size="0.4064" layer="25" font="vector"/>
+<attribute name="VALUE" x="13.3096" y="8.8646" size="0.4064" layer="27"/>
+<attribute name="PARTNO" value="GRM21BR71A225KA01L" x="14.3256" y="10.2616" size="1.778" layer="27" display="off"/>
 </element>
 <element name="_SS" library="JCM" package="SOLDER_PAD" value="SOLDER_PAD" x="10.414" y="22.098" smashed="yes">
 <attribute name="NAME" x="10.795" y="22.987" size="0.6096" layer="51" font="vector"/>
@@ -585,7 +587,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VALUE" x="9.144" y="14.478" size="1.27" layer="27"/>
 </element>
 <element name="GND" library="JCM" package="SOLDER_PAD" value="SOLDER_PAD" x="10.414" y="24.638" smashed="yes">
-<attribute name="NAME" x="10.7696" y="25.5524" size="0.6096" layer="51" font="vector"/>
+<attribute name="NAME" x="10.8712" y="25.6032" size="0.6096" layer="51" font="vector"/>
 <attribute name="VALUE" x="9.144" y="22.098" size="1.27" layer="27"/>
 </element>
 </elements>
@@ -626,7 +628,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <contactref element="C14" pad="2"/>
 <wire x1="16.9538" y1="22.787" x2="16.9538" y2="19.812" width="0.3048" layer="1"/>
 <wire x1="16.9538" y1="19.812" x2="17.7038" y2="19.812" width="0.4064" layer="1"/>
-<polygon width="0.1524" layer="16">
+<polygon width="0.1524" layer="16" thermals="no">
 <vertex x="8.89" y="7.366"/>
 <vertex x="27.305" y="7.366"/>
 <vertex x="27.305" y="30.6832"/>
@@ -721,7 +723,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="17.9538" y1="16.837" x2="18.4538" y2="16.837" width="0.3048" layer="1"/>
 <wire x1="18.4538" y1="16.837" x2="18.4538" y2="17.9204" width="0.3048" layer="1"/>
 <wire x1="18.4538" y1="17.9204" x2="18.5928" y2="18.0594" width="0.3048" layer="1"/>
-<polygon width="0.1524" layer="1" rank="2">
+<polygon width="0.1524" layer="1" thermals="no" rank="2">
 <vertex x="8.89" y="7.366"/>
 <vertex x="27.305" y="7.366"/>
 <vertex x="27.305" y="28.956"/>
@@ -751,7 +753,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <via x="15.494" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.8976" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.8976" y="10.922" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="13.97" y="10.922" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="14.224" y="11.1252" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="13.462" y="17.526" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="13.462" y="21.59" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="13.462" y="27.178" extent="1-16" drill="0.3048" diameter="0.6096"/>
@@ -791,8 +793,8 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="21.844" y1="29.972" x2="14.6558" y2="29.972" width="0.508" layer="1"/>
 <via x="14.6558" y="29.972" extent="1-16" drill="0.381" diameter="0.508"/>
 <via x="23.622" y="13.462" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<wire x1="21.844" y1="28.575" x2="21.9098" y2="28.1178" width="0" layer="19" extent="1-1"/>
-<wire x1="19.3294" y1="18.9992" x2="19.3294" y2="19.0754" width="0" layer="19" extent="1-1"/>
+<wire x1="21.844" y1="28.575" x2="21.844" y2="28.1836" width="0.000253125" layer="1"/>
+<wire x1="21.844" y1="28.1836" x2="21.9098" y2="28.1178" width="0.000253125" layer="1"/>
 </signal>
 <signal name="VDD">
 <contactref element="CYRF6936" pad="35"/>
@@ -871,7 +873,8 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="22.7988" y1="21.194" x2="22.5298" y2="21.194" width="0.254" layer="1"/>
 <wire x1="12.5112" y1="14.9242" x2="12.5112" y2="10.5664" width="0.4064" layer="1"/>
 <wire x1="12.5112" y1="10.5664" x2="11.4698" y2="9.525" width="0.4064" layer="1"/>
-<wire x1="12.5112" y1="10.5664" x2="13.0192" y2="10.5664" width="0.4064" layer="1"/>
+<wire x1="12.5112" y1="10.5664" x2="13.1208" y2="10.5664" width="0.4064" layer="1"/>
+<wire x1="13.1208" y1="10.5664" x2="13.4256" y2="10.2616" width="0.4064" layer="1"/>
 </signal>
 <signal name="RST">
 <contactref element="CYRF6936" pad="34"/>
