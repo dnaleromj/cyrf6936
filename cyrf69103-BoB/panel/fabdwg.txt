@@ -1,0 +1,7 @@
+* FR4 Material
+* All layers .5 oz. copper
+* All holes plated through
+* Drills shown as finished sizes
+* Board thickness .8mm
+* Use p-cyrf6936-bob.board_outline.oln as board outline.
+
