@@ -1779,6 +1779,8 @@ Parallel Resonant
 Freq Init Stability &lt;=30ppm
 Load Capacitance 10pF
 </text>
+<text x="182.88" y="7.62" size="2.1844" layer="97">Joseph Moreland</text>
+<text x="236.22" y="7.62" size="2.1844" layer="97">v0.1</text>
 </plain>
 <instances>
 <instance part="CYRF6936" gate="CYRF6936" x="96.52" y="91.44" smashed="yes">

@@ -2327,6 +2327,8 @@ Parallel Resonant
 Freq Init Stability &lt;=30ppm
 Load Capacitance 10pF
 </text>
+<text x="177.8" y="7.62" size="2.54" layer="97">Joseph Moreland</text>
+<text x="236.22" y="7.62" size="2.54" layer="97">v0.1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

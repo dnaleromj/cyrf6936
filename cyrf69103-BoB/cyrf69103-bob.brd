@@ -45,7 +45,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -131,9 +131,9 @@
 <wire x1="9.271" y1="28.956" x2="20.955" y2="28.956" width="0.2032" layer="51"/>
 <wire x1="22.733" y1="28.956" x2="26.924" y2="28.956" width="0.2032" layer="51"/>
 <rectangle x1="21.082" y1="29.083" x2="23.876" y2="30.734" layer="42"/>
-<text x="25.9334" y="16.4592" size="0.889" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">CYRF6936-BoB v0.1</text>
+<text x="25.9334" y="16.4592" size="0.889" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">CYRF69103-BoB v0.1</text>
 <text x="12.827" y="16.8656" size="0.762" layer="52" font="vector" ratio="15" rot="MR270" align="bottom-center">J Moreland Engineering LLC
-18 Apr 2013</text>
+22 Apr 2013</text>
 <dimension x1="27.305" y1="38.1" x2="8.89" y2="38.1" x3="18.0975" y3="40.0304" textsize="0.8128" textratio="15" layer="47"/>
 <dimension x1="27.305" y1="7.366" x2="27.305" y2="38.1" x3="36.068" y3="22.733" textsize="0.762" textratio="15" layer="47"/>
 <rectangle x1="8.89" y1="30.6832" x2="27.2796" y2="38.1" layer="30"/>
