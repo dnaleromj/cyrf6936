@@ -27,10 +27,10 @@ UsedLibrary="/Users/jmoreland/.dropbox-alt/Dropbox/eagle/lbr/SparkFun-master-25-
 
 [Win_1]
 Type="Control Panel"
-Loc="176 155 1157 769"
+Loc="420 293 1019 692"
 State=2
 Number=0
 
 [Desktop]
-Screen="1680 1050"
+Screen="1920 1200"
 Window="Win_1"

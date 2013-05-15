@@ -1,0 +1,12 @@
+cp ../../panel/p-c* .
+mv p-cyrf*.xln p-cyrf6936-bob.TXT
+mv p-cyrf*.oln p-cyrf6936-bob.GML
+mv p-cyrf*.tcr p-cyrf6936-bob.GTP
+mv p-cyrf*.bcr p-cyrf6936-bob.GBP
+mv p-cyrf*.smt p-cyrf6936-bob.GTS
+mv p-cyrf*.smb p-cyrf6936-bob.GBS
+mv p-cyrf*.tslk p-cyrf6936-bob.GTO
+mv p-cyrf*.bslk p-cyrf6936-bob.GBO
+mv p-cyrf*.top p-cyrf6936-bob.GTL
+mv p-cyrf*.bot p-cyrf6936-bob.GBL
+zip cyrf6936-bob-v0.2-smart.zip  p-c*.???

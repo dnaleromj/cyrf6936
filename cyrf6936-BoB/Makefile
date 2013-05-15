@@ -38,8 +38,8 @@ dirs :
 #.PRECIOUS : %.cmp %.sol %.stc %.sts %.tplc %.bplc %.bor %.xln %.l02 %.l15 %.tcr %.bcr %.sor
 #%.all: %.cmp %.sol %.stc %.sts %.tplc %.bplc %.xln %.bor %.l02 %.l15 %.tcr %.bcr %.sor
 
-.PRECIOUS : %.top %.bot %.smt %.smb %.tslk %.bslk %.oln %.xln %.tcr %.bcr 
-%.all : %.top %.bot %.smt %.smb %.tslk %.bslk %.oln %.xln %.tcr %.bcr 
+.PRECIOUS : %.top %.bot %.smt %.smb %.tslk %.bslk %.oln %.xln %.tcr %.bcr %.mil
+%.all : %.top %.bot %.smt %.smb %.tslk %.bslk %.oln %.xln %.tcr %.bcr %.mil 
 	touch $@
 
 # Component side
@@ -59,11 +59,11 @@ dirs :
 	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< bStop
 # Silkscreen comp. side
 %.tslk : %.brd
-	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Dimension tPlace tDocu tNames
+	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Dimension tPlace tNames
 
 # Silkscreen sold. side
 %.bslk : %.brd
-	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Dimension bPlace bDocu bNames
+	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Dimension bPlace bNames
 
 # Cream comp. side
 %.tcr: %.brd
@@ -81,6 +81,10 @@ dirs :
 # Outline
 %.oln : %.brd
 	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Dimension
+
+# Milling
+%.mil : %.brd
+	$(EAGLE_EXE) -X -N -d GERBER_RS274X -o $(GERBER_DIR)$@ $< Milling
 
 # Scoring layer
 #%.sor : %.brd

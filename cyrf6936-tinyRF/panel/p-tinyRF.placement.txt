@@ -1,0 +1,9 @@
+tinyRF 0.100 0.100
+tinyRF 0.100 0.672
+tinyRF 0.100 1.244
+tinyRF 0.672 0.100
+tinyRF 0.672 0.672
+tinyRF 0.672 1.244
+tinyRF 1.244 0.100
+tinyRF 1.244 0.672
+tinyRF 1.244 1.244

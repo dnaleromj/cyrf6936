@@ -2,7 +2,7 @@ GERBMERGE = gerbmerge
 GERBV = gerbv
 
 CFG=layout.cfg
-DEF=layout-6x6.def
+DEF=layout.def
 
 _panel: 
 	cd ..; make gerber

@@ -2299,7 +2299,9 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="VCC" library="JCM" deviceset="SOLDER_PAD" device=""/>
 <part name="IRQ" library="JCM" deviceset="SOLDER_PAD" device=""/>
 <part name="GND" library="JCM" deviceset="SOLDER_PAD" device=""/>
-<part name="U$1" library="JCM" deviceset="CYRF69103" device=""/>
+<part name="U$1" library="JCM" deviceset="CYRF69103" device="">
+<attribute name="PARTNO" value="CYRF69103-40LFXC"/>
+</part>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.47uF">
 <attribute name="PARTNO" value="GRM155R60J474KE19D"/>
 <attribute name="VOLT" value="6.3"/>
@@ -2309,11 +2311,19 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="SCLK" library="JCM" deviceset="SOLDER_PAD" device=""/>
 <part name="SDATA" library="JCM" deviceset="SOLDER_PAD" device=""/>
 <part name="VCC_JMP" library="JCM" deviceset="SOLDER_PAD" device=""/>
-<part name="D2" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN">
+<attribute name="PARTNO" value="LTST-C190KGKT"/>
+</part>
+<part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED">
+<attribute name="PARTNO" value="LTST-C191TBKT"/>
+</part>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="330">
+<attribute name="PARTNO" value="CRCW0402330RJNED"/>
+</part>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="330">
+<attribute name="PARTNO" value="CRCW0402330RJNED"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2435,7 +2445,9 @@ Load Capacitance 10pF
 <instance part="GND" gate="G$1" x="27.94" y="88.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.686" y="91.186" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="104.14" y="83.82"/>
+<instance part="U$1" gate="G$1" x="104.14" y="83.82">
+<attribute name="PARTNO" x="104.14" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C2" gate="G$1" x="134.62" y="132.08" rot="R90">
 <attribute name="PARTNO" x="134.62" y="132.08" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="VOLT" x="134.62" y="132.08" size="1.778" layer="96" rot="R90" display="off"/>
@@ -2453,11 +2465,19 @@ Load Capacitance 10pF
 <instance part="VCC_JMP" gate="G$1" x="147.32" y="175.26" smashed="yes">
 <attribute name="NAME" x="147.574" y="172.974" size="1.778" layer="95"/>
 </instance>
-<instance part="D2" gate="G$1" x="50.8" y="33.02" rot="R90"/>
-<instance part="D1" gate="G$1" x="50.8" y="43.18" rot="R90"/>
+<instance part="D2" gate="G$1" x="50.8" y="33.02" rot="R90">
+<attribute name="PARTNO" x="50.8" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D1" gate="G$1" x="50.8" y="43.18" rot="R90">
+<attribute name="PARTNO" x="50.8" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND12" gate="1" x="73.66" y="25.4"/>
-<instance part="R1" gate="G$1" x="38.1" y="43.18"/>
-<instance part="R2" gate="G$1" x="38.1" y="33.02"/>
+<instance part="R1" gate="G$1" x="38.1" y="43.18">
+<attribute name="PARTNO" x="38.1" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="38.1" y="33.02">
+<attribute name="PARTNO" x="38.1" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>

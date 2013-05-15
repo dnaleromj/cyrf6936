@@ -6,23 +6,23 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="dots" multiple="25" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="2" unitdist="mil" unit="mil" style="dots" multiple="25" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -33,19 +33,19 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -329,7 +329,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.1524" drill="0.3048">
+<clearance class="0" value="0.254"/>
 </class>
 </classes>
 <designrules name="Fusion_eagle_rule_v1.1-JCM-restring *">
@@ -567,10 +568,10 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VALUE" x="15.4813" y="14.1224" size="0.4064" layer="28" rot="MR0"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="14.4018" y="15.2654" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="C9" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="19.6342" y="11.5062" smashed="yes" rot="MR270">
-<attribute name="NAME" x="19.2024" y="9.7917" size="0.4064" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="20.7772" y="12.5857" size="0.4064" layer="28" rot="MR270"/>
-<attribute name="PARTNO" value="0402YD473KAT2A" x="19.6342" y="11.5062" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="C9" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="15.7226" y="16.0274" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.0081" y="15.5956" size="0.4064" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="16.8021" y="17.1704" size="0.4064" layer="27" rot="R180"/>
+<attribute name="PARTNO" value="0402YD473KAT2A" x="15.7226" y="16.0274" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C10" library="SparkFun-Passives" package="0402-CAP" value="0.047uF" x="23.9268" y="18.669" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.5204" y="20.0025" size="0.4064" layer="25" font="vector"/>
@@ -582,10 +583,10 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="VALUE" x="21.4884" y="22.0599" size="0.4064" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="0402YD473KAT2A" x="22.6314" y="20.9804" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C14" library="SparkFun-Passives" package="0805" value="2.2uF" x="14.3764" y="8.9916" smashed="yes" rot="MR0">
-<attribute name="NAME" x="15.0622" y="7.6835" size="0.4064" layer="26" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="15.3924" y="7.5946" size="0.4064" layer="28" rot="MR0"/>
-<attribute name="PARTNO" value="GRM21BR71A225KA01L" x="14.3764" y="8.9916" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="C14" library="SparkFun-Passives" package="0805" value="2.2uF" x="10.7696" y="16.9672" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.4554" y="18.2753" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="11.7856" y="18.3642" size="0.4064" layer="27" rot="R180"/>
+<attribute name="PARTNO" value="GRM21BR71A225KA01L" x="10.7696" y="16.9672" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="_SS" library="JCM" package="SOLDER_PAD_.05X.05" value="SOLDER_PAD.05X.05" x="7.874" y="23.0632" smashed="yes">
 <attribute name="NAME" x="8.8138" y="22.733" size="0.6096" layer="51" font="vector"/>
@@ -615,10 +616,12 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="NAME" x="8.382" y="28.8544" size="0.6096" layer="51" font="vector"/>
 <attribute name="VALUE" x="6.6548" y="25.3492" size="1.27" layer="27"/>
 </element>
-<element name="U$1" library="JCM" package="QFN40" value="CYRF69103" x="17.4752" y="20.574" rot="R90"/>
-<element name="C2" library="SparkFun-Passives" package="0402-CAP" value="0.47uF" x="21.1836" y="12.827" rot="MR270">
-<attribute name="VOLT" value="6.3" x="21.1836" y="12.827" size="1.778" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
-<attribute name="PARTNO" value="GRM155R60J474KE19D" x="21.1836" y="12.827" size="1.778" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
+<element name="U$1" library="JCM" package="QFN40" value="CYRF69103" x="17.4752" y="20.574" rot="R90">
+<attribute name="PARTNO" value="CYRF69103-40LFXC" x="17.4752" y="20.574" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C2" library="SparkFun-Passives" package="0402-CAP" value="0.47uF" x="20.5994" y="14.8844">
+<attribute name="VOLT" value="6.3" x="20.5994" y="14.8844" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PARTNO" value="GRM155R60J474KE19D" x="20.5994" y="14.8844" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="VDD" library="JCM" package="SOLDER_PAD_.05X.05" value="SOLDER_PAD.05X.05" x="7.874" y="26.162"/>
 <element name="SCLK" library="JCM" package="SOLDER_PAD_.05X.05" value="SOLDER_PAD.05X.05" x="7.874" y="24.5872"/>
@@ -626,12 +629,18 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <element name="VCC_JMP" library="JCM" package="SOLDER_PAD_.05X.05" value="SOLDER_PAD.05X.05" x="7.874" y="26.162" rot="MR0"/>
 <element name="D2" library="SparkFun-LED" package="LED-0603" value="GREEN" x="15.7734" y="14.8336" rot="R90">
 <attribute name="PROD_ID" value="DIO-00821" x="15.7734" y="14.8336" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="PARTNO" value="LTST-C190KGKT" x="15.7734" y="14.8336" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="RED" x="10.6934" y="14.859" rot="R90">
 <attribute name="PROD_ID" value="DIO-00819" x="10.6934" y="14.859" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="PARTNO" value="LTST-C191TBKT" x="10.6934" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R1" library="SparkFun-Passives" package="0402-RES" value="" x="13.1826" y="14.8336" rot="R180"/>
-<element name="R2" library="SparkFun-Passives" package="0402-RES" value="" x="18.3134" y="14.8844" rot="R180"/>
+<element name="R1" library="SparkFun-Passives" package="0402-RES" value="330" x="13.1826" y="14.8336" rot="R180">
+<attribute name="PARTNO" value="CRCW0402330RJNED" x="13.1826" y="14.8336" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R2" library="SparkFun-Passives" package="0402-RES" value="330" x="18.3134" y="14.8844" rot="R180">
+<attribute name="PARTNO" value="CRCW0402330RJNED" x="18.3134" y="14.8844" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -654,7 +663,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <vertex x="25" y="27"/>
 <vertex x="7" y="27"/>
 </polygon>
-<via x="12.7508" y="17.5768" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="12.9032" y="18.288" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="23.6474" y="17.1958" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="19.2532" y="20.574" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.3896" y="20.574" extent="1-16" drill="0.3048" diameter="0.6096"/>
@@ -674,7 +683,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <via x="16.5608" y="21.5138" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="15.6972" y="21.5138" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="15.6972" y="22.3774" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="12.7762" y="25.2984" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="17.0942" y="26.3652" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.5674" y="10.8712" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="17.1958" y="12.5476" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <polygon width="0.1524" layer="1" rank="2">
@@ -684,43 +693,33 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <vertex x="7" y="27"/>
 </polygon>
 <via x="10.414" y="10.7696" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="10.414" y="13.208" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="11.8872" y="19.4564" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="10.414" y="15.7988" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="10.414" y="18.288" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="10.414" y="20.828" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="9.0424" y="23.368" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="10.414" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="10.414" y="8.3312" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="24.13" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="23.114" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="19.304" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="18.034" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="11.684" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="16.764" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="15.494" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="14.224" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="12.954" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="26.416" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="24.6888" y="21.59" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="24.638" y="24.0792" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="24.6888" y="22.86" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="23.5966" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="25.273" y="28.702" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="24.7142" y="20.2692" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="12.446" y="8.3312" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="16.3576" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.8976" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="16.3576" y="10.8712" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="21.2344" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="14.3256" y="23.9268" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="12.3952" y="26.8732" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="12.3952" y="27.8892" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="24.384" y="15.9258" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="24.384" y="15.9766" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="21.2344" y="10.922" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="23.622" y="10.922" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="16.7132" y="27.7876" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="13.97" y="26.3652" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="10.4648" y="25.908" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="20.7264" y="23.7236" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="26.67" y="10.922" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="26.67" y="13.716" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="26.67" y="16.2052" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="26.67" y="18.542" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="20.32" y="16.002" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="23.114" y="16.002" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="26.67" y="21.082" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="26.67" y="23.622" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="26.67" y="8.382" extent="1-16" drill="0.3048" diameter="0.6096"/>
@@ -737,7 +736,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <contactref element="U$1" pad="GND"/>
 <contactref element="C2" pad="2"/>
 <via x="15.5702" y="12.6492" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<via x="20.0152" y="15.8496" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="21.9456" y="15.9512" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="17.4752" y="21.5138" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="18.3896" y="21.5138" extent="1-16" drill="0.3048" diameter="0.6096"/>
 <via x="19.2532" y="21.5138" extent="1-16" drill="0.3048" diameter="0.6096"/>
@@ -757,49 +756,38 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="21.8798" y1="25.6286" x2="20.6502" y2="25.6286" width="0.254" layer="1"/>
 <wire x1="20.6502" y1="25.6286" x2="20.6248" y2="25.654" width="0.254" layer="1"/>
 <via x="21.4376" y="20.2692" extent="1-16" drill="0.3048" diameter="0.6096"/>
-<wire x1="25.273" y1="28.702" x2="26.416" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="28.702" x2="25.273" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="23.114" y1="28.702" x2="24.13" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="27.178" x2="26.416" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="25.654" x2="26.67" y2="27.178" width="0" layer="19" extent="1-1"/>
+<via x="11.8872" y="21.6408" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="10.414" y="22.6568" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="10.414" y="24.3332" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="9.0932" y="25.1968" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="11.8872" y="25.146" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="9.0932" y="19.558" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="9.0424" y="21.6916" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="11.3792" y="26.3652" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<via x="9.0932" y="26.3652" extent="1-16" drill="0.3048" diameter="0.6096"/>
+<wire x1="26.67" y1="27.178" x2="26.67" y2="25.654" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="23.622" x2="26.67" y2="25.654" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="21.082" x2="26.67" y2="23.622" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="18.542" x2="26.67" y2="21.082" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="16.2052" x2="26.67" y2="18.542" width="0" layer="19" extent="1-1"/>
-<wire x1="24.384" y1="15.9258" x2="26.67" y2="16.2052" width="0" layer="19" extent="1-1"/>
-<wire x1="12.3952" y1="27.8892" x2="12.3952" y2="26.8732" width="0" layer="19" extent="1-1"/>
-<wire x1="12.954" y1="28.702" x2="12.3952" y2="27.8892" width="0" layer="19" extent="1-1"/>
+<wire x1="24.638" y1="24.0792" x2="26.67" y2="23.622" width="0" layer="19" extent="1-1"/>
 <wire x1="18.2252" y1="23.549" x2="19.2252" y2="23.549" width="0" layer="19" extent="1-1"/>
-<wire x1="11.684" y1="28.702" x2="12.3952" y2="27.8892" width="0" layer="19" extent="1-1"/>
-<wire x1="14.224" y1="28.702" x2="12.954" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="15.494" y1="28.702" x2="14.224" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="16.764" y1="28.702" x2="15.494" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="16.7132" y1="27.7876" x2="16.764" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="18.034" y1="28.702" x2="16.764" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="19.304" y1="28.702" x2="18.034" y2="28.702" width="0" layer="19" extent="1-1"/>
-<wire x1="10.414" y1="28.702" x2="11.684" y2="28.702" width="0" layer="19" extent="1-1"/>
 <wire x1="24.4348" y1="13.6652" x2="23.7956" y2="14.8012" width="0" layer="19" extent="16-16"/>
-<wire x1="10.414" y1="13.208" x2="9.9434" y2="14.859" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9248" y1="27.8892" x2="9.0932" y2="26.3652" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="21.082" x2="24.6888" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="13.716" x2="24.4348" y2="13.6652" width="0" layer="19" extent="1-1"/>
 <wire x1="15.5702" y1="12.6492" x2="15.0234" y2="14.8336" width="0" layer="19" extent="1-1"/>
 <wire x1="17.1958" y1="12.5476" x2="15.5702" y2="12.6492" width="0" layer="19" extent="1-1"/>
 <wire x1="16.3576" y1="10.8712" x2="17.1958" y2="12.5476" width="0" layer="19" extent="1-1"/>
 <wire x1="18.5674" y1="10.8712" x2="17.1958" y2="12.5476" width="0" layer="19" extent="1-1"/>
-<wire x1="19.6342" y1="10.8562" x2="18.5674" y2="10.8712" width="0" layer="19" extent="16-16"/>
-<wire x1="21.2344" y1="10.922" x2="19.6342" y2="10.8562" width="0" layer="19" extent="16-16"/>
-<wire x1="21.1836" y1="12.177" x2="21.2344" y2="10.922" width="0" layer="19" extent="16-16"/>
-<wire x1="23.622" y1="10.922" x2="21.2344" y2="10.922" width="0" layer="19" extent="1-1"/>
-<wire x1="10.414" y1="10.7696" x2="10.414" y2="13.208" width="0" layer="19" extent="1-1"/>
-<wire x1="10.414" y1="8.3312" x2="10.414" y2="10.7696" width="0" layer="19" extent="1-1"/>
-<wire x1="12.446" y1="8.3312" x2="10.414" y2="8.3312" width="0" layer="19" extent="1-1"/>
-<wire x1="13.4764" y1="8.9916" x2="12.446" y2="8.3312" width="0" layer="19" extent="16-16"/>
 <wire x1="16.3576" y1="8.382" x2="16.3576" y2="10.8712" width="0" layer="19" extent="1-1"/>
 <wire x1="18.8976" y1="8.382" x2="18.5674" y2="10.8712" width="0" layer="19" extent="1-1"/>
 <wire x1="21.2344" y1="8.382" x2="18.8976" y2="8.382" width="0" layer="19" extent="1-1"/>
 <wire x1="23.5966" y1="8.382" x2="21.2344" y2="8.382" width="0" layer="19" extent="1-1"/>
-<wire x1="7.9248" y1="27.8892" x2="10.414" y2="28.702" width="0" layer="19" extent="1-1"/>
+<wire x1="23.622" y1="10.922" x2="23.5966" y2="8.382" width="0" layer="19" extent="1-1"/>
+<wire x1="21.2344" y1="10.922" x2="23.622" y2="10.922" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="10.922" x2="26.67" y2="13.716" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="8.382" x2="26.67" y2="10.922" width="0" layer="19" extent="1-1"/>
+<wire x1="12.446" y1="8.3312" x2="16.3576" y2="8.382" width="0" layer="19" extent="1-1"/>
+<wire x1="10.414" y1="8.3312" x2="12.446" y2="8.3312" width="0" layer="19" extent="1-1"/>
+<wire x1="10.414" y1="10.7696" x2="10.414" y2="8.3312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_U">
 <contactref element="C5" pad="1"/>
@@ -866,16 +854,16 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <wire x1="20.4556" y1="19.3294" x2="20.4502" y2="19.324" width="0.254" layer="1"/>
 <wire x1="14.3614" y1="25.146" x2="17.2252" y2="23.549" width="0" layer="19" extent="1-16"/>
 <wire x1="13.6906" y1="23.8506" x2="14.3614" y2="25.146" width="0" layer="19" extent="16-16"/>
+<wire x1="11.6696" y1="16.9672" x2="13.6906" y2="17.526" width="0" layer="19" extent="1-16"/>
 <wire x1="16.2052" y1="17.579" x2="13.6906" y2="17.526" width="0" layer="19" extent="1-16"/>
 <wire x1="16.764" y1="16.6624" x2="16.2052" y2="17.579" width="0" layer="19" extent="1-16"/>
+<wire x1="16.3726" y1="16.0274" x2="16.764" y2="16.6624" width="0" layer="19" extent="1-16"/>
+<wire x1="16.749" y1="15.2654" x2="16.3726" y2="16.0274" width="0" layer="19" extent="1-16"/>
 <wire x1="19.7252" y1="17.599" x2="19.7612" y2="16.6624" width="0" layer="19" extent="1-16"/>
-<wire x1="16.749" y1="15.2654" x2="16.764" y2="16.6624" width="0" layer="19" extent="16-16"/>
-<wire x1="15.0518" y1="15.2654" x2="16.749" y2="15.2654" width="0" layer="19" extent="16-16"/>
+<wire x1="15.0518" y1="15.2654" x2="16.3726" y2="16.0274" width="0" layer="19" extent="1-16"/>
 <wire x1="11.557" y1="26.035" x2="14.3614" y2="25.146" width="0" layer="19" extent="16-16"/>
 <wire x1="7.874" y1="26.162" x2="11.557" y2="26.035" width="0" layer="19" extent="16-16"/>
-<wire x1="19.6342" y1="12.1562" x2="16.749" y2="15.2654" width="0" layer="19" extent="16-16"/>
-<wire x1="15.2764" y1="8.9916" x2="19.6342" y2="12.1562" width="0" layer="19" extent="16-16"/>
-<wire x1="7.874" y1="15.113" x2="13.6906" y2="17.526" width="0" layer="19" extent="1-16"/>
+<wire x1="7.874" y1="15.113" x2="11.6696" y2="16.9672" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RST">
 <contactref element="C15" pad="2"/>
@@ -954,8 +942,7 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <signal name="VDD_1.8">
 <contactref element="U$1" pad="36"/>
 <contactref element="C2" pad="1"/>
-<wire x1="19.4056" y1="14.9502" x2="21.1836" y2="13.477" width="0.254" layer="16"/>
-<wire x1="19.4056" y1="14.9502" x2="17.7252" y2="17.599" width="0" layer="19" extent="1-16"/>
+<wire x1="19.9494" y1="14.8844" x2="17.7252" y2="17.599" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ISSP-SCLK">
 <contactref element="U$1" pad="21"/>

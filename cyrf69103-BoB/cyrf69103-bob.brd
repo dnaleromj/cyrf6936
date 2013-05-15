@@ -621,7 +621,9 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <attribute name="NAME" x="14.9352" y="28.1432" size="0.6096" layer="51" font="vector"/>
 <attribute name="VALUE" x="13.208" y="24.638" size="1.27" layer="27"/>
 </element>
-<element name="U$1" library="JCM" package="QFN40" value="CYRF69103" x="17.4752" y="20.574" rot="R90"/>
+<element name="U$1" library="JCM" package="QFN40" value="CYRF69103" x="17.4752" y="20.574" rot="R90">
+<attribute name="PARTNO" value="CYRF69103-40LFXC" x="17.4752" y="20.574" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="C2" library="SparkFun-Passives" package="0402-CAP" value="0.47uF" x="19.6088" y="14.097" rot="R270">
 <attribute name="VOLT" value="6.3" x="19.6088" y="14.097" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="PARTNO" value="GRM155R60J474KE19D" x="19.6088" y="14.097" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
@@ -632,12 +634,18 @@ Seeed fusion service DRU updated to allow smaller restring on vias - mainly beca
 <element name="VCC_JMP" library="JCM" package="SOLDER_PAD" value="SOLDER_PAD" x="10.414" y="27.178" rot="MR0"/>
 <element name="D2" library="SparkFun-LED" package="LED-0603" value="GREEN" x="13.5636" y="11.1506">
 <attribute name="PROD_ID" value="DIO-00821" x="13.5636" y="11.1506" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PARTNO" value="LTST-C190KGKT" x="13.5636" y="11.1506" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="RED" x="13.589" y="14.097">
 <attribute name="PROD_ID" value="DIO-00819" x="13.589" y="14.097" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PARTNO" value="LTST-C191TBKT" x="13.589" y="14.097" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1" library="SparkFun-Passives" package="0402-RES" value="" x="14.986" y="14.097" rot="R270"/>
-<element name="R2" library="SparkFun-Passives" package="0402-RES" value="" x="14.9352" y="11.2014" rot="R270"/>
+<element name="R1" library="SparkFun-Passives" package="0402-RES" value="330" x="14.986" y="14.097" rot="R270">
+<attribute name="PARTNO" value="CRCW0402330RJNED" x="14.986" y="14.097" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R2" library="SparkFun-Passives" package="0402-RES" value="330" x="14.9352" y="11.2014" rot="R270">
+<attribute name="PARTNO" value="CRCW0402330RJNED" x="14.9352" y="11.2014" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
